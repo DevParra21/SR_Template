@@ -1,0 +1,51 @@
+<div class="jumbotron">
+    <h1 class="display-5">Registro de usuario nuevo.</h1>
+    <hr class="my-2">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputName">Nombre(s)</label>
+                <input type="text" class="form-control" id="inputName" />
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputLastName1">Apellido Paterno</label>
+                <input type="text" class="form-control" id="inputlastName" />
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputLastName2">Apellido Materno</label>
+                <input type="text" class="form-control" id="inputLastName2" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputRFC">RFC</label>
+                <input type="text" class="form-control" id="inputRFC" />
+            </div>
+            <div class="form-group col-md-8">
+                <label for="inputPhone">Número Telefónico</label>
+                <input type="text" class="form-control" id="inputPhone" />
+            </div>
+        </div>
+        <hr class="my-2">
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="inputEmail4">Correo Electrónico</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@dominio.com.mx">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword4" />
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword5">Repita su contraseña</label>
+                <input type="password" class="form-control" id="inputPassword5" />
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success">Registrar</button>
+    </form>
+    <div id="linkInicioSesion">
+        Regresar a <a [routerLink]="['/inicio']">Inicio de Sesión.</a>
+    </div>
+</div>

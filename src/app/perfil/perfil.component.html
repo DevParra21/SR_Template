@@ -1,0 +1,42 @@
+<div class="jumbotron" style="background-color: white; border: solid;">
+    <div class="my-3">
+        <a [routerLink]="['/principal']">Regresar</a>
+    </div>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="home" aria-selected="true">Información Personal</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="address-tab" data-toggle="tab" href="#address" role="tab" aria-controls="address" aria-selected="false">Direcciones de facturación</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="fact-tab" data-toggle="tab" href="#fact" role="tab" aria-controls="fact" aria-selected="false">Facturas</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab" style="margin-top: 20px;">
+            <form action="">
+                <div class="form-row">
+                    <div class="form-group col-sm-4">
+                        <label for="inputName">Nombre(s)</label>
+                        <input type="text" class="form-control" id="inputName" disabled />
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="inputLastName1">Apellido Paterno</label>
+                        <input type="text" class="form-control" id="inputlastName" disabled />
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="inputLastName2">Apellido Materno</label>
+                        <input type="text" class="form-control" id="inputLastName2" disabled />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="address-tab">
+            direcciones
+        </div>
+        <div class="tab-pane fade" id="fact" role="tabpanel" aria-labelledby="fact-tab">
+            facturas
+        </div>
+    </div>
+</div>
