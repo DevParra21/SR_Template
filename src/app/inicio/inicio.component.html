@@ -13,17 +13,17 @@
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
             </div>
             <div class="row mb-5 d-flex flex-row-reverse">
-                <div id="botonInicio" class="col-lg-2">
-                    <button [routerLink]="['/principal']" class="btn btn-success" style="width: 100%;">Iniciar Sesión</button>
+                <div id="botonInicio" class="col-lg-3">
+                    <button [routerLink]="['/principal']" class="btn btn-success" style="width: 100%;" id="btnInicioSesion">Iniciar Sesión</button>
                 </div>
-                <div id="botonInvitado" class="col-lg-3">
-                    <button [routerLink]="['/nueva-solicitud']" class="btn btn-secondary" style="width: 100%;"><small>Ingresar como invitado</small></button>
+                <div id="botonInvitado" class="col-lg-2">
+                    <button [routerLink]="['/nueva-solicitud']" class="btn btn-secondary" style="width: 100%;"><small>Solicitud Express</small></button>
                 </div>
             </div>
             <div id="linkRegistro">
                 ¿Aún no te encuentras registrado? <a [routerLink]="['/registro']">Haz clic aquí.</a>
             </div>
-            
+
         </div>
     </form>
 </div>

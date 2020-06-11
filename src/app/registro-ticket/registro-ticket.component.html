@@ -1,17 +1,21 @@
 <div class="jumbotron">
     <h4 class="display-5">Captura de nueva solicitud</h4>
     <hr class="m-5">
+    <div class="progress" style="background-color: white;">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">66%</div>
+    </div>
     <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
+        <div class="col-lg-12 d-flex flex-row-reverse">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item" aria-disabled="true">Captura Solicitud</li>
-                  <li class="breadcrumb-item active" aria-current="page"><b>Agrega Tickets</b></li>
-                  <li class="breadcrumb-item">Resumen</li>
+                    <li class="breadcrumb-item" aria-disabled="true">Captura Solicitud</li>
+                    <li class="breadcrumb-item active" aria-current="page"><b>Agrega Tickets</b></li>
+                    <li class="breadcrumb-item">Resumen</li>
                 </ol>
             </nav>
         </div>
     </div>
+    <!-- <app-progress-bar></app-progress-bar> componente ProgressBar. Omitir por mientras para que corran las animaciones que están en cada componente. -->
     <div class="container-fluid">
         <form>
             <div class="row mb-2">
@@ -25,84 +29,85 @@
                 <div class="col-lg-8">
                     <div class="row">
                         <div class="col-lg-6">
-                            <label for="inputFecha" class="col-form-label">Fecha de Compra</label>
-                            <input type="date" class="form-control" name="inputFecha" id="inputFecha">
-                        </div>
-                        <div class="col-lg-6">
                             <label for="cbSucursal" class="col-form-label">Sucursal</label>
                             <select class="form-control" name="cbSucursal">
                                 <option>Seleccionar...</option>
-                                <option>SUCURSAL 1</option>
-                                <option>SUCURSAL 2</option>
-                                <option>SUCURSAL 3</option>
+                                <option>01 - SUCURSAL ROMA</option>
+                                <option>02 - SUCURSAL CUMBRES</option>
                             </select>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="inputFecha" class="col-form-label">Fecha</label>
+                            <input type="date" class="form-control" name="inputFecha" id="inputFecha">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
-                            <label for="cbCaja" class="col-form-label">Número de Caja</label>
+                            <label for="cbCaja" class="col-form-label">Caja</label>
                             <select class="form-control" name="cbCaja">
                                 <option>Seleccionar...</option>
-                                <option>CAJA 1</option>
-                                <option>CAJA 2</option>
-                                <option>CAJA 3</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
                             </select>
                         </div>
                         <div class="col-lg-6">
-                            <label for="inputNumeroTicket" class="col-form-label">Número de Ticket</label>
+                            <label for="inputNumeroTicket" class="col-form-label">Ticket</label>
                             <input type="number" class="form-control" name="inputNumeroTicket" id="inputNumeroTicket">
                         </div>
                     </div>
-                    <div class="row mt-5">
+                    <div class="row mt-4">
                         <div class="col-lg-12">
                             <button class="btn btn-primary" style="width: 100%;">Agregar Ticket</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <img src="../../assets/ticket_sr.png" alt="" width="100%" class="rounded mx-auto d-block">
-                    <small class="small text-justify">Aquí puedes ver dónde encontrar la información necesaria para el correcto registro de tu ticket</small>
+                    <img src="../../assets/ticket_sr.png" alt="" width="100%" height="auto" class="rounded mx-auto d-block">
                 </div>
             </div>
             <hr class="m-4">
             <legend>Tickets Agregados</legend>
             <div class="form-group row">
                 <div class="col-lg-12">
-                <table class="table table-striped table-inverse">
-                    <thead class="thead-inverse">
-                        <tr>
-                            <th>Fecha de Compra</th>
-                            <th>Sucursal</th>
-                            <th>Número de Caja</th>
-                            <th>Número de Ticket</th>
-                            <th>Eliminar</th>
-                        </tr>
+                    <table class="table table-striped table-inverse">
+                        <thead class="thead-inverse">
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Sucursal</th>
+                                <th class="text-right">Caja</th>
+                                <th class="text-right">Ticket</th>
+                                <th class="text-center">Eliminar</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td scope="row">Fecha</td>
-                                <td>Sucursal 1</td>
-                                <td># Caja</td>
-                                <td># TIcket</td>
-                                <td><button class="btn btn-danger">Eliminar</button></td>
+                                <td>01 - SUCURSAL ROMA</td>
+                                <td class="text-right">02</td>
+                                <td class="text-right">2034</td>
+                                <td class="text-center"><button class="btn btn-danger">Eliminar</button></td>
                             </tr>
                             <tr>
                                 <td scope="row">Fecha</td>
-                                <td>Sucursal 1</td>
-                                <td># Caja</td>
-                                <td># Ticket</td>
-                                <td><button class="btn btn-danger">Eliminar</button></td>
+                                <td>02 - SUCURSAL CUMBRES</td>
+                                <td class="text-right">05</td>
+                                <td class="text-right">388</td>
+                                <td class="text-center"><button class="btn btn-danger">Eliminar</button></td>
                             </tr>
                         </tbody>
-                </table>
-            </div>
-            </div>
-            <div class="form-group row d-flex flex-row-reverse">
-                <div class="col-lg-3 mt-5">
-                    <button class="btn btn-primary" style="width: 100%;" [routerLink]="['/resumen']" routerLinkActive="router-link-active" >Continuar</button>
+                    </table>
                 </div>
-                <div class="col-lg-3 mt-5">
-                    <button class="btn btn-secondary" style="width: 80%;" [routerLink]="['/nueva-solicitud']" routerLinkActive="router-link-active" >Regresar</button>
+            </div>
+            <hr class="my-3">
+            <div class="form-group row">
+                <div class="col-lg-4">
+                    <button [routerLink]="['/nueva-solicitud']" class="btn btn-secondary" style="width: 100%; height: 100%;">Regresar</button>
+                </div>
+                <div class="col-lg-8">
+                    <button [routerLink]="['/resumen']" class="btn btn-primary" style="width: 100%; height: 100%;">Continuar</button>
                 </div>
             </div>
         </form>

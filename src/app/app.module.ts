@@ -14,6 +14,7 @@ import { SolicitudFacturaComponent } from './solicitud-factura/solicitud-factura
 import { RegistroTicketComponent } from './registro-ticket/registro-ticket.component';
 import { ResumenSolicitudComponent } from './resumen-solicitud/resumen-solicitud.component';
 import { SolicitudAceptadaComponent } from './solicitud-aceptada/solicitud-aceptada.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/inicio', pathMatch:'full'},
@@ -40,7 +41,8 @@ const routes: Routes = [
     SolicitudFacturaComponent,
     RegistroTicketComponent,
     ResumenSolicitudComponent,
-    SolicitudAceptadaComponent
+    SolicitudAceptadaComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
