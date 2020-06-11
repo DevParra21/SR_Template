@@ -1,3 +1,7 @@
 #linkInicioSesion {
-    text-align: right;
+    text-align: left;
+}
+
+#btnRegistro{
+    float: right;
 }

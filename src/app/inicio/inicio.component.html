@@ -1,7 +1,7 @@
 <div>
     <form>
         <div class="jumbotron">
-            <h1 class="display-5">Bienvenido al sistema de Facturación de Super Roma.</h1>
+            <h1 class="display-5">Bienvenido al sistema de generación de Solicitudes de Factura, de Super Roma.</h1>
             <p class="lead">Aquí podrás generar la solicitud de facturación de todas tus compras realizadas con nosotros, Solo tienes que tener a la mano tu ticket de compra y la información necesaria para solicitarla. <a href="">Ver información necesaria para solicitar factura.</a></p>
             <hr class="my-4">
             <div class="form-group">
@@ -12,12 +12,18 @@
                 <label for="exampleInputPassword1">Contraseña</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
             </div>
-            <div id="botonInicio">
-                <button [routerLink]="['/principal']" class="btn btn-success">Iniciar Sesión</button>
+            <div class="row mb-5 d-flex flex-row-reverse">
+                <div id="botonInicio" class="col-lg-2">
+                    <button [routerLink]="['/principal']" class="btn btn-success" style="width: 100%;">Iniciar Sesión</button>
+                </div>
+                <div id="botonInvitado" class="col-lg-3">
+                    <button [routerLink]="['/nueva-solicitud']" class="btn btn-secondary" style="width: 100%;"><small>Ingresar como invitado</small></button>
+                </div>
             </div>
             <div id="linkRegistro">
                 ¿Aún no te encuentras registrado? <a [routerLink]="['/registro']">Haz clic aquí.</a>
             </div>
+            
         </div>
     </form>
 </div>

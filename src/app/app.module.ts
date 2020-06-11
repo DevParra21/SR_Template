@@ -8,12 +8,12 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { RegistroComponent } from './registro/registro.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { SolicitudFacturaComponent } from './solicitud-factura/solicitud-factura.component';
 import { RegistroTicketComponent } from './registro-ticket/registro-ticket.component';
 import { ResumenSolicitudComponent } from './resumen-solicitud/resumen-solicitud.component';
+import { SolicitudAceptadaComponent } from './solicitud-aceptada/solicitud-aceptada.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/inicio', pathMatch:'full'},
@@ -22,7 +22,9 @@ const routes: Routes = [
   {path: 'principal', component: PrincipalComponent},
   {path: 'perfil', component: PerfilComponent},
   {path: 'nueva-solicitud', component: SolicitudFacturaComponent},
-  {path: 'registro-ticket', component: RegistroTicketComponent}
+  {path: 'registro-ticket', component: RegistroTicketComponent},
+  {path: 'resumen', component: ResumenSolicitudComponent},
+  {path: 'solicitud-finalizada', component: SolicitudAceptadaComponent}
 
 ];
 
@@ -33,12 +35,12 @@ const routes: Routes = [
     FooterComponent,
     InicioComponent,
     RegistroComponent,
-    SidebarComponent,
     PrincipalComponent,
     PerfilComponent,
     SolicitudFacturaComponent,
     RegistroTicketComponent,
-    ResumenSolicitudComponent
+    ResumenSolicitudComponent,
+    SolicitudAceptadaComponent
   ],
   imports: [
     BrowserModule,
