@@ -11,13 +11,19 @@ import { RegistroComponent } from './registro/registro.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { SolicitudFacturaComponent } from './solicitud-factura/solicitud-factura.component';
+import { RegistroTicketComponent } from './registro-ticket/registro-ticket.component';
+import { ResumenSolicitudComponent } from './resumen-solicitud/resumen-solicitud.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/inicio', pathMatch:'full'},
   {path: 'inicio', component: InicioComponent},
   {path: 'registro', component: RegistroComponent },
   {path: 'principal', component: PrincipalComponent},
-  {path: 'perfil', component: PerfilComponent}
+  {path: 'perfil', component: PerfilComponent},
+  {path: 'nueva-solicitud', component: SolicitudFacturaComponent},
+  {path: 'registro-ticket', component: RegistroTicketComponent}
+
 ];
 
 @NgModule({
@@ -29,7 +35,10 @@ const routes: Routes = [
     RegistroComponent,
     SidebarComponent,
     PrincipalComponent,
-    PerfilComponent
+    PerfilComponent,
+    SolicitudFacturaComponent,
+    RegistroTicketComponent,
+    ResumenSolicitudComponent
   ],
   imports: [
     BrowserModule,

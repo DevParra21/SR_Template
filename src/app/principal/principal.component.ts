@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrincipalComponent implements OnInit {
 
-  public administrador: boolean = true;
+  public administrador: boolean = false;
 
   constructor() { }
 
