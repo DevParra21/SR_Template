@@ -34,32 +34,47 @@
         <table class="table table-stripe">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Folio</th>
+                    <th scope="col">Datos de Factura</th>
+                    <th scope="col" class="text-center">Tickets</th>
+                    <th scope="col" class="text-right">Estatus</th>
+                    <th scope="col" class="text-center">Detalle</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">00343</th>
+                    <td><b>Estrategia Logística y Empresarial S.A.</b> - José Vasconcelos 209 Residencial San Agustín, 5000. San Pedro Garza García, NL.</td>
+                    <td class="text-right">2</td>
+                    <td class="text-right"><span class="badge badge-success">Generada <fa-icon [icon]="iconoCheck"></fa-icon></span>
+
+                    </td>
+                    <td class="text-right"><button class="btn btn-info" (click)="VerDetalle()"><fa-icon [icon]="iconoDetalle"></fa-icon></button></td>
                 </tr>
                 <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <th scope="row">00443</th>
+                    <td><b>Estrategia Logística y Empresarial S.A.</b> - José Vasconcelos 209 Residencial San Agustín, 5000. San Pedro Garza García, NL.</td>
+                    <td class="text-right">1</td>
+                    <td class="text-right"><span class="badge badge-success">Generada <fa-icon [icon]="iconoCheck"></fa-icon></span>
+
+                    </td>
+                    <td class="text-right"><button class="btn btn-info" (click)="VerDetalle()"><fa-icon [icon]="iconoDetalle"></fa-icon></button></td>
                 </tr>
                 <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
+                    <th scope="row">00482</th>
+                    <td><b>Estrategia Logística y Empresarial S.A.</b> - José Vasconcelos 209 Residencial San Agustín, 5000. San Pedro Garza García, NL.</td>
+                    <td class="text-right">3</td>
+                    <td class="text-right"><span class="badge badge-success">Generada <fa-icon [icon]="iconoCheck"></fa-icon></span></td>
+                    <td class="text-right"><button class="btn btn-info" (click)="VerDetalle()"><fa-icon [icon]="iconoDetalle"></fa-icon></button></td>
                 </tr>
             </tbody>
         </table>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <button class="btn btn-info" style="float: right;">Ver todas</button>
+        </div>
     </div>
 
 </div>
