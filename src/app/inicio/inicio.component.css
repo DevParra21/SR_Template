@@ -1,3 +1,15 @@
 #linkRegistro {
     text-align: center;
 }
+
+#infoLink {
+    color: rgb(52, 50, 211);
+}
+
+#infoLink:hover {
+    cursor: pointer;
+}
+
+p.lead {
+    text-align: justify;
+}

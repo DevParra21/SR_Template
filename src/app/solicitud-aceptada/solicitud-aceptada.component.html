@@ -1,7 +1,9 @@
 <div class="jumbotron">
-    <h1 class="display-5">Solicitud #00344 Enviada.</h1>
+    <h1 class="display-5">Solicitud #00344 Enviada.
+        <fa-icon [icon]="check" [styles]="{'stroke': 'black', 'color': 'green'}"></fa-icon>
+    </h1>
     <p>
-        Tu solicitud se ha generado correctamente. Una vez generada tu factura, te notificaremos al correo electrónico <b>correo@dominio.com.mx</b>
+        Tu solicitud se ha enviado correctamente. Una vez generada tu factura, te notificaremos al correo electrónico <b>correo@dominio.com.mx</b>
     </p>
     <app-progress-bar [porcentaje]="porcentaje"></app-progress-bar>
     <hr class="my-2">
@@ -91,13 +93,13 @@
     <hr class="my-2">
     <div class="row">
         <div class="col-lg-12 text-right">
-            Quiero <a [routerLink]="['/nueva-solicitud']">Enviar una nueva Solicitud</a>.
+            Quiero <a [routerLink]="['/nueva-solicitud']">enviar una nueva Solicitud</a>.
         </div>
     </div>
     <br>
     <div class="row">
         <div class="col-lg-12 text-right">
-            Ver <a [routerLink]="['/principal']">mis Solicitudes Generadas</a>.
+            Ver <a [routerLink]="['/principal']">mis Solicitudes Enviadas</a>.
         </div>
     </div>
 </div>

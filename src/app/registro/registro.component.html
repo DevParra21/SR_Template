@@ -1,46 +1,46 @@
 <div class="jumbotron">
-    <h1 class="display-5">Registro de usuario nuevo.</h1>
+    <h1 class="display-5">Registro de nuevo Usuario.</h1>
     <hr class="my-2">
     <form>
         <div class="form-row">
             <div class="form-group col-md-4">
-                <label for="inputName">Nombre(s)</label>
-                <input type="text" class="form-control" id="inputName" />
+                <label for="inputName">Nombre(s)*</label>
+                <input type="text" class="form-control" id="inputName" required />
             </div>
             <div class="form-group col-md-4">
-                <label for="inputLastName1">Apellido Paterno</label>
-                <input type="text" class="form-control" id="inputlastName" />
+                <label for="inputLastName1">Apellido Paterno*</label>
+                <input type="text" class="form-control" id="inputlastName" required />
             </div>
             <div class="form-group col-md-4">
-                <label for="inputLastName2">Apellido Materno</label>
-                <input type="text" class="form-control" id="inputLastName2" />
+                <label for="inputLastName2">Apellido Materno*</label>
+                <input type="text" class="form-control" id="inputLastName2" required />
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-4">
-                <label for="inputRFC">RFC</label>
-                <input type="text" class="form-control" id="inputRFC" />
+                <label for="inputRFC">RFC*</label>
+                <input type="text" class="form-control" id="inputRFC" required />
             </div>
             <div class="form-group col-md-8">
-                <label for="inputPhone">Número Telefónico</label>
-                <input type="text" class="form-control" id="inputPhone" />
+                <label for="inputPhone">Número Telefónico*</label>
+                <input type="text" class="form-control" id="inputPhone" required />
             </div>
         </div>
         <hr class="my-2">
         <div class="form-row">
             <div class="form-group col-md-12">
-                <label for="inputEmail4">Correo Electrónico</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@dominio.com.mx">
+                <label for="inputEmail4">Correo Electrónico*</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@dominio.com.mx" required>
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="inputPassword4">Contraseña</label>
-                <input type="password" class="form-control" id="inputPassword4" />
+                <label for="inputPassword4">Contraseña*</label>
+                <input type="password" class="form-control" id="inputPassword4" required />
             </div>
             <div class="form-group col-md-6">
-                <label for="inputPassword5">Repita su contraseña</label>
-                <input type="password" class="form-control" id="inputPassword5" />
+                <label for="inputPassword5">Repita su contraseña*</label>
+                <input type="password" class="form-control" id="inputPassword5" required />
             </div>
         </div>
         <button [routerLink]="['/inicio']" class="btn btn-primary" id="btnRegistro">Registrar</button>

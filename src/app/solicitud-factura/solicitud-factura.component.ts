@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-solicitud-factura',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class SolicitudFacturaComponent implements OnInit {
 
   porcentaje:string;
+  
+  iconoContinuar = faArrowRight;
 
   constructor() { }
 

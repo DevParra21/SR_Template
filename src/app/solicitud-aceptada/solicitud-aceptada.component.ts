@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-solicitud-aceptada',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class SolicitudAceptadaComponent implements OnInit {
 
   porcentaje:string='';
+  check = faCheck;
+  
   constructor() { }
 
   ngOnInit() {

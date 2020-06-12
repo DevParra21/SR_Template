@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-resumen-solicitud',
@@ -8,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class ResumenSolicitudComponent implements OnInit {
 
   porcentaje:string;
+
+  iconoEliminar = faTrashAlt;
+
   constructor() { }
 
   ngOnInit() {
