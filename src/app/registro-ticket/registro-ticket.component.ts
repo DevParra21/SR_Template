@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroTicketComponent implements OnInit {
 
+  
+  porcentaje:string;
+
   constructor() { }
 
   ngOnInit() {
+    this.porcentaje='capturaTickets';
   }
 
 }

@@ -1,18 +1,22 @@
-.progress-bar {
-    width: 66%;
+.progress {
+    background-color: white;
+}
+
+
+/* .progress-bar {
     background-color: #4A90E2;
     height: 100%;
     border-color: #4A90E2;
-    animation: progressBar 1s ease-out forwards;
+    animation-name: progressBar;
     animation-iteration-count: 1;
     animation-duration: 2s;
 }
 
 @keyframes progressBar {
     0% {
-        width: 33%;
+        width: 0%;
     }
     100% {
-        width: 66%;
+        width: 33%;
     }
-}
+} */

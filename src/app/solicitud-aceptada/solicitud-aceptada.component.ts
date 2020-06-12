@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SolicitudAceptadaComponent implements OnInit {
 
+  porcentaje:string='';
   constructor() { }
 
   ngOnInit() {
+    this.porcentaje='completado';
   }
 
 }
