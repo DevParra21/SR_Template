@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { faEllipsisH, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { NgxSpinnerService } from 'ngx-spinner'
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 import swal from 'sweetalert2'
+
+import { infoChart }  from './chart';
 
 @Component({
   selector: 'app-principal',
@@ -9,13 +13,50 @@ import swal from 'sweetalert2'
 })
 export class PrincipalComponent implements OnInit {
 
-  public administrador: boolean = false;
+  public administrador: boolean = true;
   iconoDetalle = faEllipsisH;
   iconoCheck = faCheck;
 
-  constructor() { }
+  infoChart: any[];
+  view: any[] = [700,400];
+
+  colorScheme = {
+    domain: ['#5AA454', '#C7B42C', '#AAAAAA']
+  };
+
+  //chart options
+  showXAxis: boolean = true;
+  showYAxis: boolean = true;
+  gradient: boolean = true;
+  showLegend: boolean = true;
+  showXAxisLabel: boolean = true;
+  xAxisLabel: string = 'Country';
+  showYAxisLabel: boolean = true;
+  yAxisLabel: string = 'Population';
+  legendTitle: string = 'Years';
+
+  constructor(private spinner: NgxSpinnerService) {
+    Object.assign(this, {infoChart});
+   }
 
   ngOnInit() {
+    this.spinner.show();
+
+    setTimeout(()=>{
+      this.spinner.hide();
+    },3000)
+  }
+
+  onSelect(data): void {
+    console.log('Item clicked', JSON.parse(JSON.stringify(infoChart)));
+  }
+
+  onActivate(data): void {
+    console.log('Activate', JSON.parse(JSON.stringify(data)));
+  }
+
+  onDeactivate(data): void {
+    console.log('Deactivate', JSON.parse(JSON.stringify(data)));
   }
 
   VerDetalle(){
