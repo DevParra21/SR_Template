@@ -27,10 +27,18 @@
                 <a [routerLink]="['/perfil']">Agregar nuevo administrador</a>
             </div>
         </div>
+        <div class="row m-5">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6">
+                <ngx-charts-bar-vertical-2d [view]="view" [scheme]="colorScheme" [results]="infoChart" [xAxis]="showXAxis" [yAxis]="showYAxis" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" (select)="onSelect($event)"
+                    (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+                </ngx-charts-bar-vertical-2d>
+            </div>
+        </div>
         <div class="row">
-            <ngx-charts-bar-vertical-2d [view]="view" [scheme]="colorScheme" [results]="infoChart" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
-                [yAxisLabel]="yAxisLabel" [legendTitle]="legendTitle" (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
-            </ngx-charts-bar-vertical-2d>
+            <div class="col-md-12 text-right">
+                <a href="">Cerrar Sesión</a>
+            </div>
         </div>
     </ng-template>
     <div class="row my-5" *ngIf="!this.administrador">

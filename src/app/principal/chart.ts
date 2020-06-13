@@ -4,11 +4,11 @@ export var infoChart=[
         "series":[
             {
                 "name":"Recibidas",
-                "value": 12
+                "value": 115
             },
             {
                 "name":"Generadas",
-                "value": 5
+                "value": 87
             }
         ]
     },
@@ -17,11 +17,11 @@ export var infoChart=[
         "series":[
             {
                 "name":"Recibidas",
-                "value": 5
+                "value": 50
             },
             {
                 "name":"Generadas",
-                "value": 2
+                "value": 23
             }
         ]
     }

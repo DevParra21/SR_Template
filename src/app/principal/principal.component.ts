@@ -21,19 +21,18 @@ export class PrincipalComponent implements OnInit {
   view: any[] = [700,400];
 
   colorScheme = {
-    domain: ['#5AA454', '#C7B42C', '#AAAAAA']
+    domain: ['#ffb66e', '#2ebf5c']
   };
 
   //chart options
   showXAxis: boolean = true;
   showYAxis: boolean = true;
-  gradient: boolean = true;
-  showLegend: boolean = true;
+  gradient: boolean = false;
+  showLegend: boolean = false;
   showXAxisLabel: boolean = true;
-  xAxisLabel: string = 'Country';
+  xAxisLabel: string = 'Sucursales';
   showYAxisLabel: boolean = true;
-  yAxisLabel: string = 'Population';
-  legendTitle: string = 'Years';
+  yAxisLabel: string = 'Solicitudes';
 
   constructor(private spinner: NgxSpinnerService) {
     Object.assign(this, {infoChart});
