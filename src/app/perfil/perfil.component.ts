@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-perfil',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilComponent implements OnInit {
 
+  iconoEliminar = faTrash;
+  
   constructor() { }
 
   ngOnInit() {

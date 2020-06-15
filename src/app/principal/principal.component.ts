@@ -13,7 +13,7 @@ import { infoChart }  from './chart';
 })
 export class PrincipalComponent implements OnInit {
 
-  public administrador: boolean = true;
+  public administrador: boolean = false;
   iconoDetalle = faEllipsisH;
   iconoCheck = faCheck;
 

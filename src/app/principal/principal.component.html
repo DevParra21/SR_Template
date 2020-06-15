@@ -35,11 +35,6 @@
                 </ngx-charts-bar-vertical-2d>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 text-right">
-                <a href="">Cerrar Sesión</a>
-            </div>
-        </div>
     </ng-template>
     <div class="row my-5" *ngIf="!this.administrador">
         <h4>Solicitudes Generadas</h4>
@@ -81,5 +76,10 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <a [routerLink]="['/inicio']">Cerrar Sesión</a>
+        </div>
     </div>
 </div>
