@@ -1,0 +1,60 @@
+<div class="jumbotron">
+    <h1 class="display-5">Nueva Dirección Fiscal.</h1>
+    <hr class="my-2">
+    <form>
+        <div class="form-group row">
+            <div class="col-lg-6">
+                <label for="inputName" class="col-form-label">Razón Social</label>
+                <input type="text" class="form-control" name="inputName" id="inputName" placeholder="">
+            </div>
+            <div class="col-lg-3">
+                <label for="cbTipoPersona" class="col-form-label">Tipo de Persona Fiscal</label>
+                <select class="form-control" name="cbTipoPersona">
+                    <option>Seleccionar...</option>
+                    <option>FÍSICA</option>
+                    <option>MORAL</option>
+                </select>
+            </div>
+            <div class="col-lg-3">
+                <label for="inputName" class="col-form-label">RFC</label>
+                <input type="text" class="form-control" name="inputName" id="inputName" placeholder="XXXX0000AB0">
+            </div>
+        </div>
+        <hr class="m-4">
+        <div class="form-group row">
+            <div class="col-lg-9">
+                <label for="inputCalle" class="col-form-label">Calle</label>
+                <input type="text" class="form-control" name="inputCalle" id="inputCalle" placeholder="">
+            </div>
+            <div class="col-lg-3">
+                <label for="inputNoExt" class="col-form-label">Número Ext.</label>
+                <input type="text" class="form-control" name="inputNoExt" id="inputNoExt">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-6">
+                <label for="inputColonia" class="col-form-label">Colonia</label>
+                <input type="text" class="form-control" name="inputColonia" id="inputColonia" placeholder="">
+            </div>
+            <div class="col-lg-3">
+                <label for="cbMunicipio" class="col-form-label">Municipio</label>
+                <select class="form-control" name="cbMunicipio">
+                    <option>GUADALUPE</option>
+                    <option>MONTERREY</option>
+                    <option>SAN PEDRO GZA GARCÍA</option>
+                    <option>LINARES</option>
+                    <option>ESCOBEDO</option>
+                    <option>APODACA</option>
+                </select>
+            </div>
+            <div class="col-lg-3">
+                <label for="inputCP" class="col-form-label">Código Postal</label>
+                <input type="text" class="form-control" name="inputCP" id="inputCP">
+            </div>
+        </div>
+        <button [routerLink]="['/inicio']" class="btn btn-primary" id="btnRegistro">Registrar</button>
+    </form>
+    <div id="linkPerfil">
+        Regresar a <a [routerLink]="['/perfil']">Mi Perfil</a>
+    </div>
+</div>

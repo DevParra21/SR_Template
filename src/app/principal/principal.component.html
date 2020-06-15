@@ -6,14 +6,13 @@
     <div *ngIf="this.administrador; then adminBlock else userBlock"></div>
     <ng-template #userBlock>
         <div class="row">
-            <div class="col-md-4">
-                <a href="">Agregar dirección de facturación</a>
-                <a href="">Ver mis direcciones de facturación</a>
-            </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 text-left">
                 <a [routerLink]="['/nueva-solicitud']">Solicitar nueva factura</a>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 text-center">
+                <a [routerLink]="['/nueva-direccion']">Agregar dirección fiscal</a>
+            </div>
+            <div class="col-lg-4 text-right">
                 <a [routerLink]="['/perfil']">Ver mi información de perfil</a>
             </div>
         </div>
