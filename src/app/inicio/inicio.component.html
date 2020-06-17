@@ -1,9 +1,8 @@
 <div>
     <form>
-        <div class="jumbotron">
             <h1 class="display-5">Bienvenido al sistema de generación de Solicitudes de Factura, de Super Roma.</h1>
-            <p class="lead">Aquí podrás generar la solicitud de facturación de todas tus compras realizadas con nosotros, Solo debes de tener a la mano tu ticket de compra y la información necesaria para solicitarla.
-                <small><a (click)="onInfoClick()" id="infoLink">Ver información necesaria para enviar una solicitud de facturación.</a></small></p>
+            <p class="lead">Aquí podrás generar la solicitud de facturación de todas tus compras realizadas con nosotros, Solo debes de tener a la mano tu ticket de compra y la información necesaria para solicitarla.</p>
+            <p class="lead text-right"><a (click)="onInfoClick()" id="infoLink">Ver información necesaria para enviar una solicitud de facturación.</a></p>
             <hr class="my-4">
             <div class="form-group">
                 <label for="exampleInputEmail1">Correo Electrónico</label>
@@ -15,15 +14,14 @@
             </div>
             <div class="row mb-5 d-flex flex-row-reverse">
                 <div id="botonInicio" class="col-lg-3">
-                    <button [routerLink]="['/principal']" class="btn btn-info" style="width: 100%;" id="btnInicioSesion">Iniciar Sesión</button>
+                    <button [routerLink]="['/principal']" class="btn" id="btnInicioSesion">Iniciar Sesión</button>
                 </div>
                 <div id="botonInvitado" class="col-lg-2">
-                    <button [routerLink]="['/nueva-solicitud']" class="btn btn-secondary" style="width: 100%;"><small>Solicitud Express</small></button>
+                    <button [routerLink]="['/nueva-solicitud']" class="btn" id="btnSolicitudExpress"><small>Solicitud Express</small></button>
                 </div>
             </div>
             <div id="linkRegistro">
                 ¿Aún no te encuentras registrado? <a [routerLink]="['/registro']">Haz clic aquí.</a>
             </div>
-        </div>
     </form>
 </div>

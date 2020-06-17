@@ -16,7 +16,9 @@
 }
 
 
-/* .my-overlay i.fa.fa-spinner.fa-spin,
-.spinner-big {
-    font-size: 100px !important;
-} */
+.jumbotron{
+    background-color: transparent;
+    /* background-image: url('../assets/Captura.PNG'); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

@@ -1,4 +1,4 @@
-<div class="jumbotron">
+
     <ngx-spinner></ngx-spinner>
     <h4 class="display-5">¡Bienvenido, Usuario prueba!</h4>
     <p class="lead">¿Qué deseas hacer?</p>
@@ -19,11 +19,27 @@
     </ng-template>
     <ng-template #adminBlock>
         <div class="row">
-            <div class="col-md-4">
-                <a href="">Ver Solicitudes de Factura</a>
+            <div class="col-lg-4">
+                <a [routerLink]="['/usuarios']">Ver Clientes Registrados</a>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
+                <a [routerLink]="['/ver-solicitudes']">Ver Solicitudes de Factura</a>
+            </div>
+            <div class="col-lg-4">
                 <a [routerLink]="['/perfil']">Agregar nuevo administrador</a>
+            </div>
+        </div>
+        <hr>
+       <legend>Catálogos</legend>
+        <div class="row">
+            <div class="col-lg-3">
+                Cajas
+            </div>
+            <div class="col-lg-3">
+                Sucursales
+            </div>
+            <div class="col-lg-3">
+                Uso de CFDI
             </div>
         </div>
         <div class="row m-5">
@@ -52,9 +68,7 @@
                     <th scope="row">00343</th>
                     <td><b>Estrategia Logística y Empresarial S.A.</b> - José Vasconcelos 209 Residencial San Agustín, 5000. San Pedro Garza García, NL.</td>
                     <td class="text-right">2</td>
-                    <td class="text-right"><span class="badge badge-success">Generada <fa-icon [icon]="iconoCheck"></fa-icon></span>
-
-                    </td>
+                    <td class="text-right"><span class="badge badge-success">Generada <fa-icon [icon]="iconoCheck"></fa-icon></span></td>
                     <td class="text-right"><button class="btn btn-info" (click)="VerDetalle()"><fa-icon [icon]="iconoDetalle"></fa-icon></button></td>
                 </tr>
                 <tr>
@@ -81,4 +95,3 @@
             <a [routerLink]="['/inicio']">Cerrar Sesión</a>
         </div>
     </div>
-</div>

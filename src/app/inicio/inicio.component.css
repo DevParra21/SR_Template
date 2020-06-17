@@ -13,3 +13,18 @@
 p.lead {
     text-align: justify;
 }
+
+.btn{
+    width: 100%;
+}
+
+#btnInicioSesion{
+    background-color: #FEB634;
+    color: white;
+}
+
+#btnSolicitudExpress{
+    background-color: #EA1330;
+    color: white;
+    font-weight: 900 !important;
+}

@@ -13,7 +13,7 @@ import { infoChart }  from './chart';
 })
 export class PrincipalComponent implements OnInit {
 
-  public administrador: boolean = false;
+  public administrador: boolean = true;
   iconoDetalle = faEllipsisH;
   iconoCheck = faCheck;
 
@@ -60,7 +60,7 @@ export class PrincipalComponent implements OnInit {
 
   VerDetalle(){
     swal.fire({
-      title: ' Factura #003244',
+      title: ' Solicitud #003244',
       width: 1000,
       html:`
       <div class="row">

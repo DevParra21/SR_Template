@@ -20,6 +20,8 @@ import { ResumenSolicitudComponent } from './resumen-solicitud/resumen-solicitud
 import { SolicitudAceptadaComponent } from './solicitud-aceptada/solicitud-aceptada.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { DireccionFiscalComponent } from './direccion-fiscal/direccion-fiscal.component';
+import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.component';
+import { ConsultaSolicitudesComponent } from './consulta-solicitudes/consulta-solicitudes.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/inicio', pathMatch:'full'},
@@ -31,7 +33,9 @@ const routes: Routes = [
   {path: 'registro-ticket', component: RegistroTicketComponent},
   {path: 'resumen', component: ResumenSolicitudComponent},
   {path: 'solicitud-finalizada', component: SolicitudAceptadaComponent},
-  {path: 'nueva-direccion', component: DireccionFiscalComponent}
+  {path: 'nueva-direccion', component: DireccionFiscalComponent},
+  {path: 'usuarios', component: ListaUsuariosComponent},
+  {path: 'ver-solicitudes', component: ConsultaSolicitudesComponent}
 
 ];
 
@@ -49,7 +53,9 @@ const routes: Routes = [
     ResumenSolicitudComponent,
     SolicitudAceptadaComponent,
     ProgressBarComponent,
-    DireccionFiscalComponent
+    DireccionFiscalComponent,
+    ListaUsuariosComponent,
+    ConsultaSolicitudesComponent
   ],
   imports: [
     BrowserModule,
